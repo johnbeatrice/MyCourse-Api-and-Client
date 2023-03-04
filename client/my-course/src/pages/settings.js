@@ -36,7 +36,7 @@ function Settings() {
     // make modal disappear
     setDeleteProfile(false);
     try {
-      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/deleteUser", {
+      let res = await fetch("url", {
         method: "PUT",
         // headers and mode were required to avoid cors error
         mode: 'cors',
