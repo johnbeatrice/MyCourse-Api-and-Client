@@ -1,0 +1,251 @@
+/* global styles */
+/* box-sizing: border box; */
+
+
+/* fonts and colors */
+/* background colors: #f5f7f8, #F2F3F5 */
+/* form wrapper color #ebf3ff */
+/* MyCourse logo color rgb(0, 86, 210) */
+/* alternate test color: #666 */
+
+/* styles */
+
+.background {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+
+  background-color: #F2F3F5;
+
+}
+
+.error-redirect {
+  width: 40%;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.settings-container {
+
+  width: 200px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid black; */
+}
+
+.delete-user-btn {
+  margin-top: 50px;
+  margin-left: 30px;
+
+  padding: 12px;
+  width: 160px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: rgb(0, 86, 210);
+  color: #fff;
+  /* font-weight: bold; */
+  font-size: 1rem;
+}
+
+.delete-user-btn:hover {
+  opacity: .9;
+}
+
+nav {
+
+  /* border: 1px solid black; */
+
+  height: 70px;
+  padding: 0 5%;
+
+  background-color: #fff;
+
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.nav-content {
+
+  /* border: 1px solid black; */
+  
+  height: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+
+  color: rgb(0, 86, 210);
+  font-weight: bold;
+  font-size: 1.6rem;
+
+}
+
+.welcome-message {
+  font-size: 1.3rem;
+}
+
+.welcome-message-wrapper {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  /* border: 1px solid black; */
+
+}
+
+.link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid #fff;
+}
+
+.about {
+  cursor: pointer;
+}
+
+.home-link {
+  font-size: 1.2rem;
+  border-bottom: 2px solid #F2F3F5;
+  width: 52px;
+}
+
+.link:hover {
+  border-bottom: 2px solid black;
+}
+
+.add-course {
+  width: 130px;
+
+  padding: 12px;
+
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+
+  margin: 30px 8% 40px auto;
+
+
+  color: #fff;
+  background-color:rgb(0, 86, 210);
+
+  
+}
+
+.add-course:hover {
+  opacity: .9;
+}
+
+/* div that appears when course list is empty */
+.no-courses {
+
+  font-size: 1.4rem;
+  /* text-align: center; */
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* border: 1px solid black; */
+}
+
+.courses-container {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-right: 20px;
+  
+  /* border: 5px solid red; */
+
+}
+
+.course-block {
+
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  /* do height testing for if people use super long titles etc */
+
+  overflow-wrap: break-word;
+
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  background-color: #fff;
+
+  /* border: 6px solid rgb(0, 86, 210); */
+  border-radius: 6px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.delete-course-btn {
+  /* display: none; */
+
+  margin-left: 130px;
+  margin-top: 5px;
+
+  padding: 4px 8px;
+  font-size: .9rem;
+  /* color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 3px; */
+  /* font-weight: bold; */
+}
+
+.delete-course-btn:hover {
+  opacity: .9;
+}
+
+.course-title {
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  /* color: rgb(0, 86, 210); */
+
+  /* border: 1px solid black; */
+}
+
+.course-link {
+
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.course-link:hover {
+  border-bottom: 2px solid black;
+}
+
+.course-link:visited {
+  color: black;
+}
+
+.course-type, .course-platform {
+  color: #666;
+  font-weight: bold;
+  font-size: .9rem;
+}
+          

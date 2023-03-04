@@ -1,0 +1,93 @@
+/* styles for modal components */
+
+.overlay {
+
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+  background-color:black;
+  opacity: .7;
+
+  z-index: 2;
+}
+
+.modal {
+
+  height: 350px;
+  width: 300px;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+
+  padding: 25px;
+
+  background-color: #fff;
+
+  z-index: 3;
+
+  text-align: center;
+  border-radius: 6px;
+
+  border: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.delete-course-modal {
+  height: 250px;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
+
+.modalBtn {
+  width: 30%;
+  padding: 10px;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  margin-left: 6px;
+  margin-right: 6px;
+
+  border: none;
+  border-radius: 6px;
+
+  /* color: #fff;
+  font-weight: bold; */
+}
+
+.submitBtn {
+
+  background-color: rgb(0, 86, 210);
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+.submitBtn:hover {
+  opacity: .9;
+}
+
+#aboutBtn {
+  background-color:rgb(0, 86, 210);
+}
+
+.aboutTxt {
+  font-size: 1.1rem;
+}
+
+.cancelBtn {
+
+  color: #fff;
+  font-weight: bold;
+
+  background-color: grey;
+}
+
+.cancelBtn:hover {
+  opacity: .9;
+}

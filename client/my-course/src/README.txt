@@ -1,0 +1,1 @@
+This app only uses username and password authentication, so users will be logged out if they close or leave the application.
