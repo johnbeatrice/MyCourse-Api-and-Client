@@ -20,7 +20,7 @@ export default function Signup() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("url", {
+      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/addUser", {
         method: "POST",
         // headers and mode were required to avoid cors error
         mode: 'cors',

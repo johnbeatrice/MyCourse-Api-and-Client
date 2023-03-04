@@ -40,7 +40,7 @@ export default function Home() {
     const firstCoursesFetch = async () => {
     
       try {
-        let res = await fetch("url", {
+        let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/getCourses", {
           method: "POST",
           // headers and mode were required to avoid cors error
           mode: 'cors',
@@ -74,7 +74,7 @@ export default function Home() {
   // fetchCourses is called in fetch to /addCourse and /deleteCourse to return updated courses array to be displayed to user
   const fetchCourses = async () => {
     try {
-      let res = await fetch("url", {
+      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/getCourses", {
         method: "POST",
         // headers and mode were required to avoid cors error
         mode: 'cors',
@@ -133,7 +133,7 @@ export default function Home() {
     // make modal disappear
     setAddCourse(false);
     try {
-      let res = await fetch("url", {
+      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/addCourse", {
         method: "PUT",
         // headers and mode were required to avoid cors error
         mode: 'cors',
@@ -173,7 +173,7 @@ export default function Home() {
     // make modal disappear
     setDeleteCourse(false);
     try {
-      let res = await fetch("url", {
+      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/deleteCourse", {
         method: "PUT",
         // headers and mode were required to avoid cors error
         mode: 'cors',
@@ -378,27 +378,28 @@ export default function Home() {
 
             <div className="logo">MyCourse</div>
 
-              <div className="welcome-message-wrapper">
+            <div className="links-wrapper">
 
-             <div 
-             className="link about"
-             onClick={handleAboutModal}
+              <div 
+                className="link about"
+                onClick={handleAboutModal}
              
              >About</div>   
 
               <Link className="link" to="/settings" state={{username: location.state.username, _id: location.state._id}}>Settings</Link>
 
-              <div className="welcome-message">Welcome, {location.state.username}</div>
-
-              </div>
-
+          
             </div>
-        </nav>
+
+          </div>
+      </nav>
 
 
-        {/* add course button */}
-        <button className="add-course" onClick={handleAddCourse}>Add course</button>
-
+        <div className="addCourseBtnAndWelcomeWrapper">
+           <div className="welcome-message">Welcome, {location.state.username}</div>
+          {/* add course button */}
+          <button className="add-course" onClick={handleAddCourse}>Add course</button>
+        </div>
         
         {/* container divs only renders if course blocks are going to render */}
         
