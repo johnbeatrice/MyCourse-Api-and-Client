@@ -40,7 +40,7 @@ export default function Home() {
     const firstCoursesFetch = async () => {
     
       try {
-        let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/getCourses", {
+        let res = await fetch("url", {
           method: "POST",
           // headers and mode were required to avoid cors error
           mode: 'cors',
@@ -74,7 +74,7 @@ export default function Home() {
   // fetchCourses is called in fetch to /addCourse and /deleteCourse to return updated courses array to be displayed to user
   const fetchCourses = async () => {
     try {
-      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/getCourses", {
+      let res = await fetch("url", {
         method: "POST",
         // headers and mode were required to avoid cors error
         mode: 'cors',
@@ -133,7 +133,7 @@ export default function Home() {
     // make modal disappear
     setAddCourse(false);
     try {
-      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/addCourse", {
+      let res = await fetch("url", {
         method: "PUT",
         // headers and mode were required to avoid cors error
         mode: 'cors',
@@ -173,7 +173,7 @@ export default function Home() {
     // make modal disappear
     setDeleteCourse(false);
     try {
-      let res = await fetch("https://MyCourseApi.johnbeatrice.repl.co/deleteCourse", {
+      let res = await fetch("url", {
         method: "PUT",
         // headers and mode were required to avoid cors error
         mode: 'cors',
